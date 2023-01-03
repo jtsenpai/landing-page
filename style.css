@@ -54,10 +54,10 @@ li:hover::after {
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    /* flex-direction: row; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
     align-items: center;
     text-align: center;
     background-color: #1F2937;
@@ -67,16 +67,15 @@ li:hover::after {
 
 .hero-img {
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
     height: auto;
 }
 
 .left {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    padding-bottom: 20px;
     border: 2px solid #F9FAF8;
-    position: inherit;
+    margin: 50px;
+    /* position: inherit; */
 }
 
 .hero-title {
@@ -98,6 +97,13 @@ li:hover::after {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    width: 55%;
+    width: 30%;
     justify-content: center;
+}
+
+.btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out; 
+    border: 1px solid #fff;
 }
